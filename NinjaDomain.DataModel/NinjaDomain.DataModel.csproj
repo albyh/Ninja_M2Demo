@@ -52,6 +52,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Migrations\201607301810275_InitialMigration.cs" />
+    <Compile Include="Migrations\201607301810275_InitialMigration.Designer.cs">
+      <DependentUpon>201607301810275_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607301835567_AddDOBtoNinja.cs" />
+    <Compile Include="Migrations\201607301835567_AddDOBtoNinja.Designer.cs">
+      <DependentUpon>201607301835567_AddDOBtoNinja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +73,14 @@
       <Project>{908F89C1-2402-445E-BEC5-B0DD5CC64CB0}</Project>
       <Name>NinjaDomain.Classes</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201607301810275_InitialMigration.resx">
+      <DependentUpon>201607301810275_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607301835567_AddDOBtoNinja.resx">
+      <DependentUpon>201607301835567_AddDOBtoNinja.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
